@@ -151,3 +151,43 @@ body{
     font-weight: bolder;
     color: var(--fontMain);
 }
+
+@media (max-width: 900px) {
+    .info-box{
+        flex-direction: column;
+        width: 100vw;
+        padding: 20px 20px;
+    }
+    .why-us-box{
+        width: 100%;
+    }
+    .info-box .info{
+        margin-top: 50px;
+    }
+
+    .fighterCard-disclamer-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100vw;
+        padding: 20px 0px;
+        gap: 20px;
+    }
+    .fighterCard-disclamer-box img{
+        height: 100px;
+        width: 200px;
+    }
+    .fighterCard-disclamer-text{
+        text-align: center;
+        direction: rtl;
+        animation: slideRight 1s ease-in;
+        width: 300px;
+        color: var(--fontMain);
+    }
+    .fighterCard-disclamer-text p{
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
