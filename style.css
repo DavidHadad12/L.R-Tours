@@ -2,6 +2,7 @@
     --MainBackgroundColor: rgb(15, 29, 16);
     --SecoundBackgroundColor: rgb(45, 70, 46);
     --fontMain: rgb(194, 207, 129);
+    --secoundFont: rgba(194, 207, 129,0.6);
 }
 
 *{
@@ -31,6 +32,11 @@ body{
 
 .header-menu-box{
     font-weight: bolder;
+    position: fixed;
+    background-color: var(--MainBackgroundColor);
+    box-shadow: 0px 1px 5px var(--fontMain);
+    z-index: 999;
+    width: 100vw;
 }
 .header-menu-title{
     display: flex;
@@ -38,16 +44,20 @@ body{
     gap: 10px;
     font-size: 24px;
 }
+.header-menu-title img{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+    animation: slideLeft 1s ease-in;
+}
+.header-menu-title img:hover{
+    cursor: pointer;
+}
 .header-menu-options{
-    position: fixed;
-    width: 100vw;
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
     align-items: center;
-    background-color: var(--MainBackgroundColor);
-    box-shadow: 0px 1px 5px var(--fontMain);
-    z-index: 999;
 }
 .header-menu-options a{
     text-decoration: none;
@@ -69,7 +79,6 @@ body{
 }
 
 .disclamer-box{
-    position: absolute;
     width: 100vw;
     height: 45vh;
     box-shadow: 0px 1px 5px var(--fontMain);
@@ -81,4 +90,64 @@ body{
     height: 100%;
     object-fit: contain;
     animation: slideLeft 1s ease-in;
+}
+
+.fighterCard-disclamer-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 80px 300px;
+    gap: 100px;
+}
+.fighterCard-disclamer-box img{
+    height: 200px;
+    width: 350px;
+    border-radius: 20px;
+    animation: slideLeft 1s ease-in;
+}
+.fighterCard-disclamer-text{
+    text-align: center;
+    direction: rtl;
+    animation: slideRight 1s ease-in;
+    width: 350px;
+    color: var(--fontMain);
+}
+.fighterCard-disclamer-text p{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.info-box{
+    display: flex;
+    justify-content: space-between;
+    color: var(--fontMain);
+    width: 100vw;
+    padding: 20px 100px;
+    direction: rtl;
+    align-items: center;
+}
+.info-box .info{
+    border-radius: 20px 0px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--fontMain);
+    animation: slideLeft 1s ease-in;
+}
+.info-box .info p {
+    padding-top: 10px;
+}
+.why-us-box{
+    width: 50%;
+    animation: slideRight 1s ease-in;
+}
+.why-us-box p{
+    color: var(--secoundFont);
+    padding: 3px;
+}
+.why-us-box .why-us-title{
+    font-size: 24px;
+    font-weight: bolder;
+    color: var(--fontMain);
 }
