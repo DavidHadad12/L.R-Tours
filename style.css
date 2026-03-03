@@ -11,18 +11,19 @@
 .header-menu-title{
     display: flex;
     align-items: center;
-    gap: 19px;
+    gap: 10px;
 }
 .header-menu-title img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
 }
 .header-menu-options{
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(39, 56, 30);
 }
 .header-menu-options a{
     text-decoration: none;
