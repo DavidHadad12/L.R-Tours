@@ -41,14 +41,14 @@ body{
 .header-menu-title{
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 24px;
+    gap: 20px;
+    font-size: 20px;
 }
 .header-menu-title img{
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     filter: invert(1);
-    animation: slideLeft 1s ease-in;
+    animation: slideRight 1s ease-in;
 }
 .header-menu-title img:hover{
     cursor: pointer;
@@ -63,19 +63,6 @@ body{
     text-decoration: none;
     color: var(--fontMain);
     animation: slideRight 1s ease-in;
-}
-.header-menu-right-options{
-    display: flex;
-    gap: 10px;
-}
-.header-menu-right-options a{
-    border: 1px solid transparent;
-    border-radius: 20px;
-    padding: 5px 10px;
-}
-.header-menu-right-options a:hover{
-    border: 1px solid var(--fontMain);
-    transition: 0.7s ease;
 }
 
 .disclamer-box{
@@ -166,11 +153,7 @@ body{
     }
 
     .fighterCard-disclamer-box{
-        display: flex;
-        justify-content: center;
         flex-direction: column-reverse;
-        align-items: center;
-        width: 100vw;
         padding: 20px 0px;
         gap: 20px;
     }
@@ -179,15 +162,11 @@ body{
         width: 200px;
     }
     .fighterCard-disclamer-text{
-        text-align: center;
-        direction: rtl;
-        animation: slideRight 1s ease-in;
         width: 300px;
-        color: var(--fontMain);
     }
-    .fighterCard-disclamer-text p{
-        font-weight: bold;
-        font-size: 16px;
-        margin-top: 10px;
+
+    .disclamer-box{
+        padding-top: 70px;
+        padding-bottom: 20px;
     }
 }
