@@ -142,6 +142,7 @@ body{
     border: 1px solid var(--fontMain);
     animation: slideLeft 1s ease-in;
 }
+
 .info-small-box{
     display: flex;
     justify-content: center;
