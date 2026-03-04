@@ -142,6 +142,26 @@ body{
     border: 1px solid var(--fontMain);
     animation: slideLeft 1s ease-in;
 }
+.info-small-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.info-small-box p{
+    font-size: 18px;
+}
+.info .info-small-box img{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-map-box{
+    margin-top: 20px;
+}
 .info-box .info p {
     padding-top: 10px;
 }
