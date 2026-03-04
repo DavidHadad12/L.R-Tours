@@ -66,9 +66,15 @@ body{
 .social-logos{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+    justify-content: center;
+}
+.social-logos a{
+    display: flex;
+    align-items: center;
 }
 .social-logos img{
+    align-items: center;
     height: 20px;
     width: 20px;
     filter: invert(1);
@@ -108,9 +114,9 @@ body{
 
 .disclamer-box{
     width: 100vw;
-    height: 45vh;
+    height: 400px;
     box-shadow: 0px 1px 5px var(--fontMain);
-    top: 50px;
+    padding-top: 50px;
     background-color: white;
 }
 .disclamer-box img{
@@ -118,33 +124,6 @@ body{
     height: 100%;
     object-fit: contain;
     animation: slideLeft 1s ease-in;
-}
-
-.fighterCard-disclamer-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    padding: 80px 300px;
-    gap: 100px;
-}
-.fighterCard-disclamer-box img{
-    height: 200px;
-    width: 350px;
-    border-radius: 20px;
-    animation: slideLeft 1s ease-in;
-}
-.fighterCard-disclamer-text{
-    text-align: center;
-    direction: rtl;
-    animation: slideRight 1s ease-in;
-    width: 350px;
-    color: var(--fontMain);
-}
-.fighterCard-disclamer-text p{
-    font-weight: bold;
-    font-size: 18px;
-    margin-top: 10px;
 }
 
 .info-box{
