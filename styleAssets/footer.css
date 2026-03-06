@@ -1,0 +1,19 @@
+.footer-box{
+   display: flex;
+   margin-top: 60px;
+   justify-content: center;
+   gap: 30%;
+   padding: 30px 80px 30px 80px;
+   background-color: black;
+   box-shadow: 1px 0px 5px var(--fontMain);
+}
+.footer-box div{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.footer-box div a{
+   text-decoration: none;
+   color: rgba(255, 255, 255, 0.6);
+   padding-bottom: 10px;
+}
